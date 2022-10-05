@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgxMonacoEditorConfig } from 'ngx-monaco-editor';
+
+import * as _M from 'monaco-editor';
+import { Position } from 'monaco-editor';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'angularMonacoTest1';
+    editor: 'primo'|'uno' = 'primo'
 }
